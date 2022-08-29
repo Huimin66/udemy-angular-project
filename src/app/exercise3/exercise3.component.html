@@ -1,0 +1,4 @@
+
+<button (click)="toggleDisplay()">Displa Details</button>
+<p *ngIf="ifParaShowed" [ngStyle]="{'background-color': getColor()}" [ngClass]="{greaterthanfive: this.clickTimes>=5}">Secret Password=tuna</p>
+<p>Click times: {{clickTimes}}</p>
