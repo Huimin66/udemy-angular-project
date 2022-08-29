@@ -1,4 +1,3 @@
-
-<button (click)="toggleDisplay()">Displa Details</button>
-<p *ngIf="ifParaShowed" [ngStyle]="{'background-color': getColor()}" [ngClass]="{greaterthanfive: this.clickTimes>=5}">Secret Password=tuna</p>
-<p>Click times: {{clickTimes}}</p>
+<button class="btn btn-primary" (click)="toggleDisplay()">Display Details</button>
+<p *ngIf="ifParaShowed">Secret Password=tuna</p>
+<div *ngFor="let history of clickHistory" [ngStyle]="{ 'background-color': history >= 5 ? 'blue' : 'white'}" [ngClass]="{ 'greaterthanfive': history >= 5 }">{{ history }}</div>
