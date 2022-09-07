@@ -2,9 +2,21 @@
   <div class="row">
     <div class="col-xs-12">
       <h3>I'm the App Component</h3>
-      <hr>
+      <hr />
       <app-servers></app-servers>
       <app-exercise3></app-exercise3>
+    </div>
+  </div>
+  <!-- exercise4 as following -->
+  <div class="row">
+    <div class="col-xs-12">
+      <app-game-control (handleInterval)="onHandleInterval($event)"></app-game-control>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <app-even *ngFor="let oddNumber of oddNumbers" [count]="oddNumber"></app-even>
+      <app-odd *ngFor="let evenNumber of evenNumbers" [count]="evenNumber"></app-odd>
     </div>
   </div>
 </div>

@@ -7,13 +7,19 @@ import { AppComponent } from './app.component';
 import { ServersComponent } from './servers/servers.component';
 import { FormsModule } from '@angular/forms';
 import { Exercise3Component } from './exercise3/exercise3.component';
+import { GameControlComponent } from './exercise4/game-control/game-control.component';
+import { OddComponent } from './exercise4/odd/odd.component';
+import { EvenComponent } from './exercise4/even/even.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ServerComponent,
     ServersComponent,
-    Exercise3Component
+    Exercise3Component,
+    GameControlComponent,
+    OddComponent,
+    EvenComponent
   ], 
   imports: [
     BrowserModule,
